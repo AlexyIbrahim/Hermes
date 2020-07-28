@@ -36,10 +36,10 @@ extension Hermes {
 
     
     // MARK: - keep an eye
-    public final class func keepAnEyeOn(notificationStringName: String, _ observer: Any, fromObject object: Any? = nil, block: @escaping (_ notification:Notification, _ userInfo: [AnyHashable: Any]?) -> ()) {
-        self.keepAnEyeOn(notificationName: Notification.Name(notificationStringName), observer, fromObject: object, block: block)
+    public final class func keepAnEyeOn(notificationStringName: String, observer: Any, fromObject object: Any? = nil, block: @escaping (_ notification:Notification, _ userInfo: [AnyHashable: Any]?) -> ()) {
+        self.keepAnEyeOn(notificationName: Notification.Name(notificationStringName), observer: observer, fromObject: object, block: block)
     }
-    public final class func keepAnEyeOn(notificationName: Notification.Name, _ observer: Any, fromObject object: Any? = nil, block: @escaping (_ notification:Notification, _ userInfo: [AnyHashable: Any]?) -> ()) {
+    public final class func keepAnEyeOn(notificationName: Notification.Name, observer: Any, fromObject object: Any? = nil, block: @escaping (_ notification:Notification, _ userInfo: [AnyHashable: Any]?) -> ()) {
         let hermes = Hermes()
         hermes.scrollReceivedCallback = block
         hermes.observer = observer
