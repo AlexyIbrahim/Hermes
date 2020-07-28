@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        Hermes.keepAnEyeOn(notificationStringName: self.string_NotificationName, observer: self, fromObject: nil) { (notification, userInfo) in
+        MOTG.keepAnEyeOn(notificationStringName: self.string_NotificationName, observer: self, fromObject: nil) { (notification, userInfo) in
             print("notification fired: \(String(describing: userInfo))")
         }
     }
