@@ -9,8 +9,8 @@
 import UIKit
 
 // 🌿 shortcuts
-public let AINotificationCenter = MOTG
-public let MOTG = Hermes.self
+public typealias AINotificationCenter = MOTG
+public typealias MOTG = Hermes
 
 public class Hermes: NSObject {
     static var scrolls: [Hermes] = [Hermes]()
